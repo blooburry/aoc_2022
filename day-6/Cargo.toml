@@ -1,0 +1,15 @@
+[package]
+name = "day_6"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+itertools = "0.10"
+
+[dev-dependencies]
+tempfile = "3.2"
+assert_cmd = "2.0.11"
+predicates = "3.0.3"
+rstest = "0.17.0"
