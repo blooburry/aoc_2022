@@ -44,7 +44,8 @@ fn main() {
                 }
                 cd_cmd if command.starts_with("cd") => {
                     if cd_cmd.starts_with("cd ..") {
-                        let p = current_dir.borrow().parent()
+                        let p = current_dir.borrow()
+                            .parent()
                             .ok_or(Error::new(ErrorKind::InvalidData, "parent does not exist"))?
                             .clone();
                         current_dir = p.upgrade().unwrap();

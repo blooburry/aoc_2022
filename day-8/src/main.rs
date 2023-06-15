@@ -4,7 +4,7 @@ use std::io::{Error, ErrorKind};
 use day_8::Tree;
 
 fn main() {
-    let mut forest = parse_input("resources/input_1cd.txt").expect("could not parse input");
+    let mut forest = parse_input("resources/input_1.txt").expect("could not parse input");
 
     // println!("the forest: {}", generate_grid_string(&forest.iter().flatten().collect()));
 
